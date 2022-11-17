@@ -165,8 +165,8 @@ export const Home = () => {
         <Box bg='#153462' color='#F6F6C9' border='1px solid yellow' height='60px'>
           <Heading fontFamily='MongoDB Value Serif' textAlign='left' p='5px' marginLeft='45px'>Customer Details</Heading>
         </Box>
-        <Box display='flex' border='1px solid red' gap='25px' mt='10px' height='800'>
-          <Box border='1px solid black' width='30%'>
+        <Box display='flex' border='1px solid transparent' gap='25px' mt='10px' height='800'>
+          <Box border='1px solid transparent' width='30%'>
             {/* <h1>Box1</h1> */}
           <Box border='1px solid transparent' borderRadius='5px' boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px" height='75px' mb='15px' bg='white' p='15px' mt='5px'>
                 <InputGroup>
@@ -300,7 +300,7 @@ export const Home = () => {
               })
             }
           </Box>
-          <Box border='1px solid darkGreen' width='70%'>
+          <Box border='1px solid transparent' width='70%'>
             {/* <h1>box2</h1> */}
            {customerData?.[0] && <Box border='1px solid transaparent' height='400px'>
               <PersonalDetails customerDetails={!individualCustomerData ? customerData[0] : individualCustomerData} customerAddressDetails={individualAddress} />
